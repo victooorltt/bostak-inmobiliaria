@@ -49,7 +49,7 @@ export default function OficinaTecnicaPage() {
           </>
         }
         subtitle="Gestión integral y tramitación administrativa"
-        description="Ofrecemos servicios especializados en urbanismo y tramitación administrativa, orientados a facilitar el desarrollo de proyectos inmobiliarios, comerciales y turísticos."
+        description="Facilitamos el desarrollo de tus proyectos con plena garantía legal y técnica."
         imageSrc="/images/oficina-6.webp"
         imageAlt="Oficina Técnica de Urbanismo y Gestión de Licencias"
       >

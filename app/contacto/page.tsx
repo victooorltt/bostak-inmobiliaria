@@ -45,6 +45,7 @@ export default function ContactoPage() {
         description="Estamos a tu disposición para asesorarte en cualquier trámite inmobiliario o consulta técnica. Respondemos con rapidez y cercanía."
         imageSrc="/images/dentro.webp"
         imageAlt="Oficina de Bostak Inmobiliaria"
+        imageOpacity="opacity-25"
       />
 
       {/* 2-Column Content Layout */}

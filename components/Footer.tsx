@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="inline-block" aria-label="Bostak Inmobiliaria - Inicio">
-              <img src="/images/logo.png" alt="Bostak Inmobiliaria" className="h-8 md:h-9 w-auto" />
+              <img src="/images/logo-footer.png" alt="Bostak Inmobiliaria" className="h-8 md:h-9 w-auto" />
             </Link>
             <p className="text-sm font-medium text-zinc-900">
               Confianza de principio a fin

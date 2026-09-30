@@ -27,12 +27,12 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#238580] border-b border-black/10 shadow-sm">
       <div className="mx-auto max-w-6xl px-6 h-20 flex items-center justify-between">
-        {/* Plain Logo in white on #238580 */}
+        {/* Logo with original B icon colors as in official navbar */}
         <Link href="/" className="inline-block flex-shrink-0" aria-label="Bostak Inmobiliaria - Inicio">
           <img
             src="/images/logo.png"
             alt="Bostak Inmobiliaria"
-            className="h-8 md:h-9 w-auto brightness-0 invert"
+            className="h-8 md:h-9 w-auto"
           />
         </Link>
 

@@ -131,8 +131,8 @@ export default function HomePage() {
     <div>
       {/* 1. Hero (Photo on right, adjusted width so it doesn't encroach, no fake filter, strong headline) */}
       <section className="relative overflow-hidden bg-white min-h-[500px] lg:min-h-[580px] flex items-center border-b border-zinc-100">
-        {/* Background photo right "suelta" - Anchored to right 48% */}
-        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[48%] h-full pointer-events-none overflow-hidden">
+        {/* Background photo right "suelta" - Anchored to right 54% reaching slightly more left */}
+        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[54%] h-full pointer-events-none overflow-hidden">
           <img
             src="/images/hero-inicio.webp"
             alt="Bostak Inmobiliaria Bilbao"
@@ -140,10 +140,10 @@ export default function HomePage() {
             fetchPriority="high"
             loading="eager"
           />
-          {/* Desktop left-to-right fade: feathers only the left edge */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/40 via-15% to-transparent to-35% hidden lg:block" />
+          {/* Desktop left-to-right gentle fade: soft, natural dissolve without harsh lines */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/20 via-20% to-transparent to-55% hidden lg:block" />
           {/* Mobile bottom-to-top fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white from-0% via-white/85 via-40% to-transparent to-85% lg:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white from-0% via-white/80 via-35% to-transparent to-85% lg:hidden" />
         </div>
 
         {/* Content container */}
