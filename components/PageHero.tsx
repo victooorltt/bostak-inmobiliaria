@@ -39,13 +39,13 @@ export default function PageHero({
       </div>
 
       {/* Centered content directly over image - exactly 2 levels: Title + Subtitle */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 py-16 lg:py-20 text-center w-full">
-        <div className="max-w-2xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-950 leading-[1.15]">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 py-16 lg:py-20 text-center w-full">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-950 leading-[1.12]">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-4 text-base sm:text-lg text-zinc-700 leading-relaxed font-normal">
+            <p className="mt-5 text-lg sm:text-xl text-zinc-700 leading-relaxed font-normal max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}

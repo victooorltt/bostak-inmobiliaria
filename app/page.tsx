@@ -161,13 +161,13 @@ export default function HomePage() {
         </div>
 
         {/* Centered content container directly over image */}
-        <div className="relative z-10 mx-auto max-w-4xl px-6 py-16 lg:py-24 text-center w-full">
-          <div className="max-w-2xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-950 leading-[1.15]">
+        <div className="relative z-10 mx-auto max-w-5xl px-6 py-16 lg:py-24 text-center w-full">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-zinc-950 leading-[1.12]">
               Bostak Inmobiliaria en Bilbao:{' '}
               <span className="text-[#238580]">Confianza en cada paso</span>
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-zinc-700 leading-relaxed font-normal max-w-xl mx-auto">
+            <p className="mt-5 text-lg sm:text-xl text-zinc-700 leading-relaxed font-normal max-w-2xl mx-auto">
               Compra o vende tu vivienda en Bilbao con asesoramiento cercano y una gestión ágil de principio a fin.
             </p>
 
