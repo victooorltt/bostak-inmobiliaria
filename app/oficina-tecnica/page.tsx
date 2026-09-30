@@ -40,7 +40,7 @@ const services = [
 export default function OficinaTecnicaPage() {
   return (
     <div>
-      {/* Section 1: Hero (Unboxed image with smooth gradient fade) */}
+      {/* Section 1: Hero (Full-width background photo, 2 levels) */}
       <PageHero
         title={
           <>
@@ -48,14 +48,15 @@ export default function OficinaTecnicaPage() {
             <span className="text-[#238580]">Urbanismo y Licencias</span>
           </>
         }
-        subtitle="Gestión integral y tramitación administrativa"
-        description="Facilitamos el desarrollo de tus proyectos con plena garantía legal y técnica."
+        subtitle="Gestión integral y tramitación administrativa especializada en Bilbao y Bizkaia."
         imageSrc="/images/oficina-6.webp"
         imageAlt="Oficina Técnica de Urbanismo y Gestión de Licencias"
+        imagePosition="object-center"
+        minHeight="min-h-[480px] lg:min-h-[540px]"
       >
         <Link
           href="/contacto/"
-          className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#238580] text-white font-medium hover:bg-[#1a6b67] transition-colors shadow-sm cursor-pointer"
+          className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#238580] text-white font-semibold hover:bg-[#1a6b67] transition-all shadow-md hover:shadow-lg cursor-pointer"
         >
           Contáctanos
         </Link>

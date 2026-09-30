@@ -35,19 +35,18 @@ const teamMembers = [
 export default function ConocenosPage() {
   return (
     <>
-      {/* Section 1: Hero (TALL photo height, balanced text) */}
+      {/* Section 1: Hero (Centered 2-level hierarchy with full-screen background photo) */}
       <PageHero
         title={
           <>
             Conócenos: <span className="text-[#238580]">Bostak</span>
           </>
         }
-        subtitle="Un enfoque humano a la par que digital"
-        description="Bostak nace desde la inquietud, el inconformismo y la convicción de 5 profesionales de Bilbao para transformar el sector inmobiliario con cercanía, honestidad y tecnología."
+        subtitle="Un enfoque humano a la par que digital para transformar el sector inmobiliario en Bilbao."
         imageSrc="/images/equipo-recepcion.webp"
         imageAlt="Equipo Bostak Inmobiliaria"
-        imagePosition="object-center"
-        minHeight="min-h-[580px] lg:min-h-[660px]"
+        imagePosition="object-[center_35%]"
+        minHeight="min-h-[520px] lg:min-h-[600px]"
       />
 
       {/* Section 2: Narrative / Vision (Brand Teal #218580 Section) */}

@@ -288,17 +288,18 @@ export default function InmueblesPage() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Section 1: Hero / Header */}
+      {/* Section 1: Hero / Header (Full-width background photo, 2 levels) */}
       <PageHero
         title={
           <>
             Encuentra tu hogar <span className="text-[#238580]">a primera vista</span>
           </>
         }
-        subtitle="Venta y alquiler en Bilbao y Bizkaia"
-        description="Explora nuestra selección de viviendas, locales, oficinas y garajes con total transparencia y asesoramiento dedicado."
+        subtitle="Venta y alquiler de inmuebles seleccionados en Bilbao y Bizkaia."
         imageSrc="/images/entrada.webp"
         imageAlt="Bostak Inmobiliaria"
+        imagePosition="object-center"
+        minHeight="min-h-[460px] lg:min-h-[520px]"
       />
 
       {/* Filter and Properties Section */}

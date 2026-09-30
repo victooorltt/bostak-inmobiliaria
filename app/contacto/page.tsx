@@ -33,19 +33,18 @@ export default function ContactoPage() {
 
   return (
     <div className="bg-white">
-      {/* Centered Hero with soft opacity background image */}
+      {/* Hero (Full-width background photo, 2 levels) */}
       <PageHero
-        variant="centered"
         title={
           <>
             Contacta con <span className="text-[#238580]">Bostak</span>
           </>
         }
-        subtitle="Estamos a tu disposición en Bilbao"
-        description="Estamos a tu disposición para asesorarte en cualquier trámite inmobiliario o consulta técnica. Respondemos con rapidez y cercanía."
+        subtitle="Estamos a tu disposición en Bilbao para asesorarte en cualquier trámite inmobiliario o consulta técnica."
         imageSrc="/images/dentro.webp"
         imageAlt="Oficina de Bostak Inmobiliaria"
-        imageOpacity="opacity-25"
+        imagePosition="object-center"
+        minHeight="min-h-[460px] lg:min-h-[520px]"
       />
 
       {/* 2-Column Content Layout */}
