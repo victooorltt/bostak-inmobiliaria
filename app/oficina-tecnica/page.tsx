@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Store, ArrowLeftRight, Hotel, HardHat } from 'lucide-react';
 import PageHero from '@/components/PageHero';
+import ContactCTA from '@/components/ContactCTA';
 import { tokens } from '@/lib/tokens';
 
 export const metadata: Metadata = {
@@ -116,24 +117,12 @@ export default function OficinaTecnicaPage() {
         </div>
       </section>
 
-      {/* Section 4: Closing reassurance & CTA (BRAND TEAL #218580 SECTION) */}
-      <section className="bg-[#218580] text-white py-16 lg:py-24">
-        <div className={tokens.container}>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg sm:text-xl text-white leading-relaxed font-normal">
-              Ofrecemos un acompañamiento riguroso y personalizado en cada fase del proceso, desde el análisis técnico hasta la resolución administrativa, con el objetivo de aportar seguridad, agilidad y transparencia a nuestros clientes.
-            </p>
-            <div className="mt-10 flex justify-center">
-              <Link
-                href="/contacto/"
-                className="inline-flex items-center justify-center bg-white text-[#218580] hover:bg-zinc-100 font-semibold px-9 py-3.5 text-base rounded-xl shadow-lg transition-all hover:shadow-xl cursor-pointer"
-              >
-                Contáctanos
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section 4: Final Contact CTA */}
+      <ContactCTA
+        title="¿Tienes un proyecto o consulta técnica?"
+        description="Ofrecemos un acompañamiento riguroso y personalizado en cada fase del proceso, desde el análisis técnico hasta la resolución administrativa con total seguridad y agilidad."
+        buttonText="Contactar con la oficina técnica"
+      />
     </div>
   );
 }
