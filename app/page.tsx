@@ -1,7 +1,23 @@
 'use client';
 
 import Link from 'next/link';
-import { Bed, Bath, Maximize2, Star, Users, Award, Laptop, ArrowRight, CalendarCheck, ShieldCheck, UserCheck } from 'lucide-react';
+import {
+  Bed,
+  Bath,
+  Maximize2,
+  Star,
+  Users,
+  Award,
+  Laptop,
+  ArrowRight,
+  CalendarCheck,
+  ShieldCheck,
+  UserCheck,
+  MapPin,
+  Home,
+  HeartHandshake,
+  CheckCircle2,
+} from 'lucide-react';
 import { tokens } from '@/lib/tokens';
 import ContactCTA from '@/components/ContactCTA';
 
@@ -129,25 +145,25 @@ const TESTIMONIALS = [
 export default function HomePage() {
   return (
     <div>
-      {/* 1. Hero (Photo on right, adjusted width so it doesn't encroach, no fake filter, strong headline) */}
-      <section className="relative overflow-hidden bg-white min-h-[500px] lg:min-h-[580px] flex items-center border-b border-zinc-100">
-        {/* Background photo right "suelta" - Anchored to right 54% reaching slightly more left */}
-        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[54%] h-full pointer-events-none overflow-hidden">
+      {/* 1. Hero (Photo on right with Bostak logo visible, soft feather fade, lifted content, inline benefits) */}
+      <section className="relative overflow-hidden bg-white min-h-[520px] lg:min-h-[590px] flex items-center border-b border-zinc-100">
+        {/* Background photo right "suelta" - Anchored to right 58%, wall logo and office visible from center */}
+        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[58%] h-full pointer-events-none overflow-hidden">
           <img
             src="/images/hero-inicio.webp"
             alt="Bostak Inmobiliaria Bilbao"
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full object-cover object-[78%_center]"
             fetchPriority="high"
             loading="eager"
           />
-          {/* Desktop left-to-right gentle fade: soft, natural dissolve without harsh lines */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/20 via-20% to-transparent to-55% hidden lg:block" />
+          {/* Desktop left-to-right gentle fade: reduced width so office is clearly visible from center */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/50 via-10% to-transparent to-28% hidden lg:block" />
           {/* Mobile bottom-to-top fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white from-0% via-white/80 via-35% to-transparent to-85% lg:hidden" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white from-0% via-white/80 via-30% to-transparent to-75% lg:hidden" />
         </div>
 
-        {/* Content container */}
-        <div className="relative z-10 mx-auto max-w-6xl px-6 py-16 lg:py-24 w-full">
+        {/* Content container - lifted by ~30px (pt-10 lg:pt-16) to reduce excess whitespace */}
+        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-10 pb-14 lg:pt-16 lg:pb-18 w-full">
           <div className="max-w-xl">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-950 leading-[1.15]">
               Bostak Inmobiliaria en Bilbao:{' '}
@@ -157,7 +173,7 @@ export default function HomePage() {
               El servicio inmobiliario que se adapta a tus necesidades. Cercanía, transparencia y las herramientas más ágiles del mercado.
             </p>
 
-            {/* Action buttons (replaced non-functional filter) */}
+            {/* Action buttons */}
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
                 href="/inmuebles-venta-alquiler/"
@@ -172,6 +188,28 @@ export default function HomePage() {
               >
                 <span>Quiero vender</span>
               </Link>
+            </div>
+          </div>
+
+          {/* Benefits row inspired by reference image (small icon + short text, no heavy boxes) */}
+          <div className="mt-10 pt-7 border-t border-zinc-200/80 max-w-2xl">
+            <div className="grid grid-cols-2 lg:flex lg:items-center lg:justify-between gap-y-3.5 gap-x-4 lg:gap-6 text-xs sm:text-sm font-medium text-zinc-800">
+              <div className="inline-flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-[#238580] shrink-0" />
+                <span>Expertos en Bilbao</span>
+              </div>
+              <div className="inline-flex items-center gap-2">
+                <Home className="h-4 w-4 text-[#238580] shrink-0" />
+                <span>Valoración de vivienda</span>
+              </div>
+              <div className="inline-flex items-center gap-2">
+                <HeartHandshake className="h-4 w-4 text-[#238580] shrink-0" />
+                <span>Asesoramiento cercano</span>
+              </div>
+              <div className="inline-flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-[#238580] shrink-0" />
+                <span>Gestión de principio a fin</span>
+              </div>
             </div>
           </div>
         </div>
