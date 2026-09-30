@@ -145,70 +145,68 @@ const TESTIMONIALS = [
 export default function HomePage() {
   return (
     <div>
-      {/* 1. Hero (Photo on right with Bostak logo visible, soft feather fade, lifted content, inline benefits) */}
-      <section className="relative overflow-hidden bg-white min-h-[520px] lg:min-h-[590px] flex items-center border-b border-zinc-100">
-        {/* Background photo right "suelta" - Anchored to right 58%, wall logo and office visible from center */}
-        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:w-[58%] h-full pointer-events-none overflow-hidden">
+      {/* 1. Hero (Premium Full-Screen Background Photo with centered content & subtle overlay) */}
+      <section className="relative overflow-hidden bg-white min-h-[560px] lg:min-h-[640px] flex items-center justify-center border-b border-zinc-200/80">
+        {/* Full-width background photo across the entire hero */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <img
             src="/images/hero-inicio.webp"
-            alt="Bostak Inmobiliaria Bilbao"
-            className="h-full w-full object-cover object-[78%_center]"
+            alt="Oficina Bostak Inmobiliaria Bilbao"
+            className="h-full w-full object-cover object-[75%_center] lg:object-[80%_center]"
             fetchPriority="high"
             loading="eager"
           />
-          {/* Desktop left-to-right gentle fade: reduced width so office is clearly visible from center */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/50 via-10% to-transparent to-28% hidden lg:block" />
-          {/* Mobile bottom-to-top fade */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white from-0% via-white/80 via-30% to-transparent to-75% lg:hidden" />
+          {/* Subtle translucent white overlay to ensure flawless readability while office & wall logo remain clearly visible */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/55 to-white/70" />
         </div>
 
-        {/* Content container - lifted by ~30px (pt-10 lg:pt-16) to reduce excess whitespace */}
-        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-10 pb-14 lg:pt-16 lg:pb-18 w-full">
-          <div className="max-w-xl">
+        {/* Centered content container directly over image */}
+        <div className="relative z-10 mx-auto max-w-4xl px-6 py-16 lg:py-24 text-center w-full">
+          <div className="max-w-2xl mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-950 leading-[1.15]">
               Bostak Inmobiliaria en Bilbao:{' '}
               <span className="text-[#238580]">Confianza de principio a fin</span>
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-zinc-600 leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg text-zinc-700 leading-relaxed font-normal">
               El servicio inmobiliario que se adapta a tus necesidades. Cercanía, transparencia y las herramientas más ágiles del mercado.
             </p>
 
-            {/* Action buttons */}
-            <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            {/* Centered action buttons */}
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/inmuebles-venta-alquiler/"
-                className="inline-flex items-center justify-center gap-2 bg-[#238580] hover:bg-[#1a6b67] text-white font-semibold px-7 py-3.5 text-base rounded-xl shadow-sm transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#238580] hover:bg-[#1a6b67] text-white font-semibold px-8 py-3.5 text-base rounded-xl shadow-md transition-all hover:shadow-lg w-full sm:w-auto"
               >
                 <span>Ver inmuebles</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/contacto/"
-                className="inline-flex items-center justify-center gap-2 bg-white border border-zinc-200 hover:border-zinc-300 text-zinc-800 font-medium px-7 py-3.5 text-base rounded-xl transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white/95 hover:bg-white border border-zinc-200 hover:border-zinc-300 text-zinc-800 font-medium px-8 py-3.5 text-base rounded-xl shadow-xs transition-colors w-full sm:w-auto"
               >
                 <span>Quiero vender</span>
               </Link>
             </div>
           </div>
 
-          {/* Benefits row inspired by reference image (small icon + short text, no heavy boxes) */}
-          <div className="mt-10 pt-7 border-t border-zinc-200/80 max-w-2xl">
-            <div className="grid grid-cols-2 lg:flex lg:items-center lg:justify-between gap-y-3.5 gap-x-4 lg:gap-6 text-xs sm:text-sm font-medium text-zinc-800">
+          {/* Shortened benefits row centered beneath buttons */}
+          <div className="mt-10 pt-6 border-t border-zinc-300/60 max-w-xl mx-auto">
+            <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10 text-xs sm:text-sm font-medium text-zinc-800">
               <div className="inline-flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-[#238580] shrink-0" />
-                <span>Expertos en Bilbao</span>
+                <span>Bilbao</span>
               </div>
               <div className="inline-flex items-center gap-2">
                 <Home className="h-4 w-4 text-[#238580] shrink-0" />
-                <span>Valoración de vivienda</span>
+                <span>Valoración</span>
               </div>
               <div className="inline-flex items-center gap-2">
                 <HeartHandshake className="h-4 w-4 text-[#238580] shrink-0" />
-                <span>Asesoramiento cercano</span>
+                <span>Asesoramiento</span>
               </div>
               <div className="inline-flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-[#238580] shrink-0" />
-                <span>Gestión de principio a fin</span>
+                <span>Gestión</span>
               </div>
             </div>
           </div>
